@@ -1,0 +1,5 @@
+node_modules/
+dist/css/
+sample.md
+.prettierignore
+package-lock.json

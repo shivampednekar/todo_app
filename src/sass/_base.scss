@@ -1,0 +1,94 @@
+// VARIABLES
+:root {
+  --primary: #4cbf72;
+  --color-light: #f4f4f4;
+  --color-dark: #212529;
+  --color-text: #333333;
+  --color-text-light: #ced4da; //ced4da
+  --color-error: #ff5959;
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.7);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.1);
+  --size: 1.5em;
+  // --primary: rgb(54, 112, 199);
+  // --spacer: 4rem;
+}
+
+//GLOBAL RESET
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px
+}
+
+body {
+  color: var(--color-light);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.6;
+
+  @media only screen and (max-width: 750px) {
+    font-size: 1.2rem;
+  }
+}
+
+main {
+  display: grid;
+  grid:
+    'header header header header' auto
+    '...... lists  tasks ......' auto /
+    1fr minmax(100px, 350px) minmax(250px, 500px) 1fr;
+  margin: 0 auto;
+
+  @media only screen and (max-width: 750px) {
+  }
+}
+
+form {
+  display: flex;
+}
+
+button {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+input {
+  border: 0;
+  outline: 0ch;
+}
+
+.new {
+  background: transparent;
+  color: inherit;
+  order: 2;
+  padding: 0.25em;
+  border-bottom: 1px solid currentColor;
+  transition: border-bottom 200ms ease-in;
+
+  &:focus {
+    border-bottom-width: 3px;
+
+    &::placeholder {
+      opacity: 0.2;
+    }
+  }
+}
+
+.btn {
+  background: 0;
+  color: inherit;
+}

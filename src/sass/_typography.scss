@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&display=swap');
+
+// CUSTOM FONTS
+@font-face {
+  font-family: 'Barrets';
+  src: url('../assects/fonts/barrets-webfont.woff2') format('woff2'),
+    url('../assects/fonts/barrets-webfont.woff') format('woff');
+  font-style: normal;
+}
+
+.title {
+  color: var(--color-dark);
+  opacity: 0.3;
+  font-family: 'Barrets';
+  font-size: calc(6.5vw + 2.6rem);
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-align: center;
+  grid-area: header;
+  margin: -0.46em 0 0.8em;
+
+  @media only screen and (max-width: 750px) {
+    font-size: calc(6.3vw + 2.2rem);
+  }
+}

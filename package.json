@@ -1,0 +1,14 @@
+{
+  "name": "todo_app",
+  "version": "1.0.0",
+  "description": "A simple app to manage your todos, where the user has the ability to Add/Delete todos.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node-sass src/sass/main.scss dist/css/styles.css -w"
+  },
+  "author": "Shivam Pednekar",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
