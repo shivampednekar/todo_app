@@ -1,5 +1,6 @@
 node_modules/
-dist/css/
+src/css/styles.css
+random.md
 sample.md
 .prettierignore
 package-lock.json
